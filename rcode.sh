@@ -3,10 +3,24 @@
 adduser()
 {
     USER=$1
-    USER=`whoami`
+    # USERGRP=(manas manu anil bannu)
+    SYSUSER=`whoami`
+    # echo $SYSUSER
+    if [ $USER = $SYSUSER ]
+    then
     echo $USER
     return 1
+    # else
+    # if [ $USER = $USERGRP ]
+    # then
+    # return 3
+    else
+    return 2
+    fi
+    
+
 }
+
 
 adduser manaswini
 returnco="$?"
