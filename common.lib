@@ -1,0 +1,32 @@
+       #!/bin/bash
+
+           read_file()
+           {
+               while read line
+                   do
+                       echo $line
+                           done < my_file.txt
+                           }
+
+                           input_file()
+                           {
+                               read input
+                                           while :
+                                               do
+                                                   case $input in
+                                                       1)
+                                                           echo "Called
+       1"
+               break
+                   ;;
+                       2)
+                           echo "Calling 2"
+                               break
+                                   ;;
+                                       *)
+      *    echo "Worng calling number"
+      *        break
+      *            ;;
+      *                esac
+      *                    done
+      *                    }
